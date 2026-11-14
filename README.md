@@ -1,0 +1,1 @@
+Este é um projeto criado para treinar o que estou aprendendo no curso de front end e também no git e github
