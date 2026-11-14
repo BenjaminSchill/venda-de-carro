@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&Vendas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2 class="top-title">Cadastre seu veículo para vender mais rápido!</h2>
+        </header>
+        <main>
+            <form class="formulario">
+                <div class="form-header">
+                    <div class="form-tab">
+                        <h2 class="form-title">formulário</h2>
+                    </div>
+                    <h1 class="top-phrase">Venda fácil seu carro!</h1>
+                    <p class="header-description">Descreva as características e marque os opcionais que ele possui</p>                    
+                </div>
+                <div class="form-group">
+                    <label for="title">Título do anúncio <span>*</span></label>
+                    <input type="text" name="title" id="title" required placeholder="Ex: Corolla 2013 intacto">
+                </div>
+                <div class="form-group">
+                    <label for="price">Preço <span>*</span></label>
+                    <input type="number" name="price" id="price" required placeholder="Ex: 54.325">
+                </div>
+                <div class="form-group">
+                    <label for="description">Descrição <span>*</span></label>
+                    <textarea name="description" id="description" required placeholder="Ex: Corolla 2013 sem arranhões, batidas ou..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="car-brand">Marca <span>*</span></label>
+                    <input type="text" name="car-brand" id="car-brand" required placeholder="Ex: Toyota">
+                </div>
+                <div class="form-group">
+                    <label for="car-model">Modelo <span>*</span></label>
+                    <input type="text" name="car-model" id="car-model" required placeholder="Ex: Corolla">
+                </div>
+                <div class="form-group">
+                    <label for="car-mileage">Quilometragem <span>*</span></label>
+                    <input type="number" name="car-mileage" id="car-mileage" required placeholder="Ex: 73.500">
+                </div>
+                <div class="form-group">
+                    <label for="car-purchase-date">Data de compra <span>*</span></label>
+                    <input type="date" name="car-purchase-date" required id="car-purchase-date">
+                </div>
+                <div class="form-group">
+                    <label for="transmition-type">Tipo de câmbio <span>*</span></label>
+                    <div class="radio">
+                        <input type="radio" value="manual" name="transmition-type" id="manual" required>
+                        <label for="manual">Manual</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" value="automatic" name="transmition-type" id="automatic">
+                        <label for="automatic">Automático</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="car-optionals">Opcionais</label>
+                    <div class="optionals-container">
+                            <div class="radio">
+                            <input type="checkbox" value="airbag" name="car-optionals[]" id="airbag">
+                            <label for="airbag">Airbag</label>
+                        </div>
+                        <div class="radio">
+                            <input type="checkbox" value="alarm" name="car-optionals[]" id="alarm">
+                            <label for="alarm">Alarme</label>
+                        </div>
+                        <div class="radio">
+                            <input type="checkbox" value="air-conditioning" name="car-optionals[]" id="air-conditioning">
+                            <label for="air-conditioning">Ar Condicionado</label>
+                        </div>
+                        <div class="radio">
+                            <input type="checkbox" value="backup-camera" name="car-optionals[]" id="backup-camera">
+                            <label for="backup-camera">Camera de ré</label>
+                        </div>
+                        <div class="radio">
+                            <input type="checkbox" value="ramp-agent" name="car-optionals[]" id="ramp-agent">
+                            <label for="ramp-agent">Assistente de pista</label>
+                        </div>
+                        <div class="radio">
+                            <input type="checkbox" value="keyless-start" name="car-optionals[]" id="keyless-start">
+                            <label for="keyless-start">Partida Keyless</label>
+                            </div>
+                        <div class="radio">
+                            <input type="checkbox" value="phone-integration" name="car-optionals[]" id="phone-integration">
+                            <label for="phone-integration">Integração com o celular</label>
+                        </div>
+                        <div class="radio">
+                            <input type="checkbox" value="leather-seat" name="car-optionals[]" id="leather-seat">
+                            <label for="leather-seat">Banco de couro</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="car-photos">Fotos do carro <span>*</span></label>
+                    <input type="file" name="car-photos" id="car-photos" multiple accept="image/*" required>
+                </div>
+                <div class="sign-up-btn">
+                    <input type="submit" value="cadastrar">
+                </div>
+            </form>
+        </main>  
+    </div>
+</body>
+</html>
